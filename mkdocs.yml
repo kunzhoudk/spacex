@@ -1,0 +1,118 @@
+# ref link: https://alinex.gitlab.io/env/mkdocs/
+#===================================================================================#
+# Site Information
+#===================================================================================#
+site_name: SpaceX
+repo_name: "kunzhoudk/SpaceX"
+repo_url:  https://github.com/kunzhoudk/spacex.git
+# site_url: https://leverage.binbash.com.ar/
+site_description: Kun Zhou's SpaceX
+site_author: Kun Zhou
+copyright: Copyright &copy; 2017-2022 <a href="https://www.binbash.com.ar">Kun Zhou</a>
+
+
+#===================================================================================#
+# Mkdocs Theme (Material Mkdocs) + Extras
+#===================================================================================#
+theme:
+  name: material
+  # custom_dir: material
+  language: en
+  #logo: assets/images/logos/binbash-icon.png
+  icon: # https://www.materialpalette.com/icons
+    logo: material/book-open-page-variant
+  favicon: assets/images/logos/favicon.ico
+  font:
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - header.autohide
+    #- content.tabs.link #Insiders only so far
+  palette: # https://www.materialpalette.com/colors
+    # Palette toggle for light mode
+    - scheme: default
+      accent: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  include_sidebar: true
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+
+
+  social:
+    - icon: material/home
+      link: 'https://www.binbash.com.ar'
+    - icon: material/github
+      link: 'https://github.com/binbashar'
+    - icon: material/linkedin
+      link: 'https://www.linkedin.com/company/binbash'
+    - icon: material/slack
+      link: 'https://join.slack.com/t/binbashar/shared_invite/zt-fw1692b6-9k4ADsWJ47lKacszphXM1w'
+    - icon: material/youtube
+      link: 'https://www.youtube.com/channel/UCUjQ3duzxQB_VtNsKNqPwDA/playlists'
+    - icon: fontawesome/brands/medium
+      link: 'https://medium.com/binbash-inc'
+    - icon: material/twitter
+      link: 'https://twitter.com/binbash_devops'
+    - icon: material/docker
+      link: 'https://hub.docker.com/orgs/binbash'
+
+#===================================================================================#
+# Mkdocs Markdown Extentions, Plugins & extras
+#===================================================================================#
+markdown_extensions:
+  - mdx_math
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      # insert a blank space before the character
+      permalink: " ¶"
+
+plugins:
+  - search
+  - awesome-pages
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+  #===================================================================================#
+# Mkdocs Navigation Tree
+#===================================================================================#
+nav: # awesome-pages pages plugin uses to folder structure as navigation layout
+    - My Profile: index.md
