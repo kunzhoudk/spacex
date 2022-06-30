@@ -2,9 +2,9 @@
 #===================================================================================#
 # Site Information
 #===================================================================================#
-site_name: SpaceX
+site_name: KSpace
 repo_name: "kunzhoudk/SpaceX"
-repo_url:  https://github.com/kunzhoudk/spacex.git
+# repo_url:  https://github.com/kunzhoudk/spacex.git
 site_url: https://kunzhouspace.com/
 site_description: Kun Zhou's SpaceX
 site_author: Kun Zhou
