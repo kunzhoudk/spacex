@@ -5,10 +5,10 @@
 site_name: SpaceX
 repo_name: "kunzhoudk/SpaceX"
 repo_url:  https://github.com/kunzhoudk/spacex.git
-# site_url: https://leverage.binbash.com.ar/
+site_url: https://kunzhouspace.com/
 site_description: Kun Zhou's SpaceX
 site_author: Kun Zhou
-copyright: Copyright &copy; 2017-2022 <a href="https://www.binbash.com.ar">Kun Zhou</a>
+copyright: Copyright &copy; 2017-2022 <a href="https://kunzhouspace.com/">Kun Zhou</a>
 
 
 #===================================================================================#
