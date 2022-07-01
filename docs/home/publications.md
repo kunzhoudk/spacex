@@ -1,5 +1,5 @@
 # Publications
-📗 : Publised
+📗 : Published
 📕 : Under review
 ## Journal papers
 
