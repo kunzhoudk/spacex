@@ -55,9 +55,9 @@ extra:
 
   social:
     - icon: material/home
-      link: 'https://www.kunzhouspace.com'
+      link: 'http://www.kunzhouspace.com'
     - icon: material/github
-      link: 'https://github.com/kunzhoudk/spacex.git'
+      link: 'https://github.com/kunzhoudk/spacex'
     - icon: material/linkedin
       link: 'https://www.linkedin.com/in/kun-zhou-35923ab2/'
     # - icon: material/slack
@@ -116,5 +116,5 @@ extra_javascript:
 #===================================================================================#
 nav: # awesome-pages pages plugin uses to folder structure as navigation layout
     - Home:
-      - My Profile: index.md
-      - Publications: publications.md
+      - index.md
+      - Publications: ./home/publications.md
