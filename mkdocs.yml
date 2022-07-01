@@ -115,4 +115,6 @@ extra_javascript:
 # Mkdocs Navigation Tree
 #===================================================================================#
 nav: # awesome-pages pages plugin uses to folder structure as navigation layout
-    - My Profile: index.md
+    - Home:
+      - My Profile: index.md
+      - Publications: publications.md
