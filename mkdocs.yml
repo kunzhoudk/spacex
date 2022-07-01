@@ -55,21 +55,21 @@ extra:
 
   social:
     - icon: material/home
-      link: 'https://www.binbash.com.ar'
+      link: 'https://www.kunzhouspace.com'
     - icon: material/github
-      link: 'https://github.com/binbashar'
+      link: 'https://github.com/kunzhoudk/spacex.git'
     - icon: material/linkedin
-      link: 'https://www.linkedin.com/company/binbash'
-    - icon: material/slack
-      link: 'https://join.slack.com/t/binbashar/shared_invite/zt-fw1692b6-9k4ADsWJ47lKacszphXM1w'
-    - icon: material/youtube
-      link: 'https://www.youtube.com/channel/UCUjQ3duzxQB_VtNsKNqPwDA/playlists'
-    - icon: fontawesome/brands/medium
-      link: 'https://medium.com/binbash-inc'
-    - icon: material/twitter
-      link: 'https://twitter.com/binbash_devops'
-    - icon: material/docker
-      link: 'https://hub.docker.com/orgs/binbash'
+      link: 'https://www.linkedin.com/in/kun-zhou-35923ab2/'
+    # - icon: material/slack
+    #   link: 'https://join.slack.com/t/binbashar/shared_invite/zt-fw1692b6-9k4ADsWJ47lKacszphXM1w'
+    # - icon: material/youtube
+    #   link: 'https://www.youtube.com/channel/UCUjQ3duzxQB_VtNsKNqPwDA/playlists'
+    # - icon: fontawesome/brands/medium
+    #   link: 'https://medium.com/binbash-inc'
+    # - icon: material/twitter
+    #   link: 'https://twitter.com/binbash_devops'
+    # - icon: material/docker
+    #   link: 'https://hub.docker.com/orgs/binbash'
 
 #===================================================================================#
 # Mkdocs Markdown Extentions, Plugins & extras
