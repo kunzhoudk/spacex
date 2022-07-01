@@ -1,3 +1,5 @@
+# Publications
+
 ## Journal papers
 
 * 📕  Chen, Y., Li, G., Zhang, X., Jia, J., **Zhou, K.**, & Wu, C. (2022). Identifying field and road modes of agricultural Machinery based on GNSS Recordings: A graph convolutional neural network approach. Computers and Electronics in Agriculture, 198, 107082.
