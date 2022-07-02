@@ -5,9 +5,9 @@
 
 * 📗 Chen, Y., Li, G., Zhang, X., Jia, J., **Zhou, K.**, & Wu, C. (2022). Identifying field and road modes of agricultural Machinery based on GNSS Recordings: A graph convolutional neural network approach. Computers and Electronics in Agriculture, 198, 107082.
 
-* 📗 Liang, Y., **Zhou, K.**, & Wu, C. (2022). Environment scenario identification based on GNSS recordings for agricultural tractors. Computers and Electronics in Agriculture, 195, 106829.[co-corresponding author]
+* 📗 Liang, Y., **Zhou, K.**, & Wu, C. (2022). Environment scenario identification based on GNSS recordings for agricultural tractors. Computers and Electronics in Agriculture, 195, 106829.🚩[co-corresponding author]
 
-* 📗 Vahdanjoo, M., **Zhou, K.**, & Sørensen, C. A. G. (2020). Route planning for agricultural machines with multiple depots: manure application case study. Agronomy, 10(10), 1608.[co-first author]
+* 📗 Vahdanjoo, M., **Zhou, K.**, & Sørensen, C. A. G. (2020). Route planning for agricultural machines with multiple depots: manure application case study. Agronomy, 10(10), 1608.🚩[co-first author]
 
 * 📗 Nilsson, R. S., & **Zhou, K**. (2020). Method and bench-marking framework for coverage path planning in arable farming. Biosystems Engineering, 198, 248-265.
 
