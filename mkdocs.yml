@@ -123,3 +123,6 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - Publications: ./home/publications.md # PATH: is given based on file structure
     - Machine Learning:
       - ./home/machine-learning/feature-scaling.md
+  
+    - Data Handling:
+      - ./home/data-handling/rename-columns-Pandas.md
