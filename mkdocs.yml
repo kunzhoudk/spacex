@@ -110,10 +110,16 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-  #===================================================================================#
-# Mkdocs Navigation Tree
+#=================== Links =========================================================#
+# markdown emoji : https://gist.github.com/rxaviers/7360908
+
 #===================================================================================#
-nav: # awesome-pages pages plugin uses to folder structure as navigation layout
-    - Home:
+  # Mkdocs Navigation Tree using awesome-pages PLUGIN 
+  # https://3os.org/utilities/markdown-cheatsheet/awesome-pages/#customize-navigation
+#===================================================================================#
+nav: # awesome-pages pages plugin uses to folder structure as navigation layout - GOOGLE SEARCH KEY
+    - About Me:
       - index.md
-      - Publications: ./home/publications.md
+      - Publications: ./home/publications.md # PATH: is given based on file structure
+    - Machine Learning:
+      - ./home/machine-learning/feature-scaling.md

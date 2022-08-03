@@ -35,11 +35,11 @@
 
 * 📗 **Zhou, K.**, Zhou, K., Bothtis, D. D., Sørensen, C. G., (2016). An object-oriented simulation tool for grain harvesting. CIGR-AgEng Conference, 26-29 June 2016, Aarhus
 
-* 📗 Jensen, A., la Riviere, I. J., de Bruin, S., **Zhou, K.**, Jørgensen, M. S., Pedersen, H., Sørensen, C. G. (2018). An     online DSS for optimisation of traffic in fields with controlled traffic farming (CTF). In CIGR 2018: XIX. World Congress of CIGR (Commission Internationale du Génie Rural) Program & Abstracts' Book: Sustainable Life for Children (pp. 154-154). CIGR.
+* 📗 Jensen, A., la Riviere, I. J., de Bruin, S., **Zhou, K.**, Jørgensen, M. S., Pedersen, H., Sørensen, C. G. (2018). An online DSS for optimisation of traffic in fields with controlled traffic farming (CTF). In CIGR 2018: XIX. World Congress of CIGR (Commission Internationale du Génie Rural) Program & Abstracts' Book: Sustainable Life for Children (pp. 154-154). CIGR.
 
-* 📗 **Zhou, K.**, Jensen, A. L., Bochtis, D., Sørensen, C. G.  A Web–based Tool for Comparing Field Area Coverage Practices. CIOSTA XXXV Conference: CIGR V Conference, Billund, Denmark; 07/2013.
+* 📗 **Zhou, K.**, Jensen, A. L., Bochtis, D., Sørensen, C. G. A Web–based Tool for Comparing Field Area Coverage Practices. CIOSTA XXXV Conference: CIGR V Conference, Billund, Denmark; 07/2013.
 
-* 📗 Gunnarsson, E. Rodias, J. Kusk, **Zhou, K.**., M. A. F. Jensen, D. D. Bochtis. Biomass crop allocation problem. International Commission of Agricultural and Biological Engineers, Section V. CIOSTA XXXV Conference “From Effective to Intelligent Agriculture and Forestry”, Billund, Denmark, 3-5 July 2013.
+* 📗 Gunnarsson, E. Rodias, J. Kusk, **Zhou, K.**. M. A. F. Jensen, D. D. Bochtis. Biomass crop allocation problem. International Commission of Agricultural and Biological Engineers, Section V. CIOSTA XXXV Conference “From Effective to Intelligent Agriculture and Forestry”, Billund, Denmark, 3-5 July 2013.
 
 ## Patents
 
