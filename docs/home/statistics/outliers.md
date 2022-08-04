@@ -32,3 +32,7 @@ Interquartile range method:
 6. Use your fences to highlight any outliers, all values that fall outside your fences.
 
 Your outliers are any values greater than your upper fence or less than your lower fence.
+
+!!! info "Reference"
+    * :ledger: [How to Find Outliers](https://www.scribbr.com/statistics/outliers/)
+    * :ledger: [https://cxl.com/blog/outliers/](https://cxl.com/blog/outliers/)
