@@ -125,4 +125,5 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - ./home/machine-learning/feature-scaling.md
   
     - Data Handling:
-      - ./home/data-handling/rename-columns-Pandas.md
+      - ./home/data-handling/Pandas:rename-columns.md
+      - ./home/data-handling/Pandas-split-columns.md
