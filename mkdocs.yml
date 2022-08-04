@@ -127,3 +127,6 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
     - Data Handling:
       - ./home/data-handling/Pandas:rename-columns.md
       - ./home/data-handling/Pandas-split-columns.md
+
+    - Statistics:
+      - ./home/statistics/itentify-outliers.md
