@@ -12,7 +12,7 @@
         <meta name="author" content="Kun Zhou">
       
       
-        <link rel="canonical" href="https://www.kunzhouspace.com/home/statistics/identify-outliers/">
+        <link rel="canonical" href="https://www.kunzhouspace.com/home/statistics/outliers/">
       
       <link rel="icon" href="../../../assets/images/logos/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
@@ -654,13 +654,15 @@
 <p>Statistical outlier detection involves applying statistical tests or procedures to identify extreme values. You can convert extreme data points into z scores that tell you how many standard deviations away they are from the mean. If a value has a high enough or low enough z score, it can be considered an outlier. As a rule of thumb, values with a z score greater than <strong>3 or less than –3</strong> are often determined to be outliers<sup>1</sup>.</p>
 <h2 id="using-the-interquartile-rangeiqr"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Using the interquartile range(IQR)<a class="headerlink" href="#using-the-interquartile-rangeiqr" title="Permanent link"> ¶</a></h2>
 <p>We can use the IQR method of identifying outliers to set up a “fence” outside of Q1 and Q3. Any values that fall outside of this fence are considered outliers.</p>
-<p>Interquartile range method:
-* Sort your data from low to high
-* Identify the first quartile (Q1), the median, and the third quartile (Q3).
-* Calculate your IQR = Q3 – Q1
-* Calculate your upper fence = Q3 + (1.5 * IQR)
-* Calculate your lower fence = Q1 – (1.5 * IQR)
-* Use your fences to highlight any outliers, all values that fall outside your fences.</p>
+<p>Interquartile range method:</p>
+<ol>
+<li>Sort your data from low to high</li>
+<li>Identify the first quartile (Q1), the median, and the third quartile (Q3).</li>
+<li>Calculate your IQR = Q3 – Q1</li>
+<li>Calculate your upper fence = Q3 + (1.5 * IQR)</li>
+<li>Calculate your lower fence = Q1 – (1.5 * IQR)</li>
+<li>Use your fences to highlight any outliers, all values that fall outside your fences.</li>
+</ol>
 <p>Your outliers are any values greater than your upper fence or less than your lower fence.</p>
 
               
