@@ -14,7 +14,6 @@ You can see here that the blue circles are outliers, where the open circles repr
 
 ![boxplot](./images/outlier-Boxplot.png "boxplot")
 
-
 ## :label: Statistical outlier detection
 
 Statistical outlier detection involves applying statistical tests or procedures to identify extreme values. You can convert extreme data points into z scores that tell you how many standard deviations away they are from the mean. If a value has a high enough or low enough z score, it can be considered an outlier. As a rule of thumb, values with a z score greater than **3 or less than –3** are often determined to be outliers<sup>1</sup>.
@@ -24,11 +23,12 @@ Statistical outlier detection involves applying statistical tests or procedures 
 We can use the IQR method of identifying outliers to set up a “fence” outside of Q1 and Q3. Any values that fall outside of this fence are considered outliers.
 
 Interquartile range method:
-* Sort your data from low to high
-* Identify the first quartile (Q1), the median, and the third quartile (Q3).
-* Calculate your IQR = Q3 – Q1
-* Calculate your upper fence = Q3 + (1.5 * IQR)
-* Calculate your lower fence = Q1 – (1.5 * IQR)
-* Use your fences to highlight any outliers, all values that fall outside your fences.
+
+1. Sort your data from low to high
+2. Identify the first quartile (Q1), the median, and the third quartile (Q3).
+3. Calculate your IQR = Q3 – Q1
+4. Calculate your upper fence = Q3 + (1.5 * IQR)
+5. Calculate your lower fence = Q1 – (1.5 * IQR)
+6. Use your fences to highlight any outliers, all values that fall outside your fences.
 
 Your outliers are any values greater than your upper fence or less than your lower fence.
