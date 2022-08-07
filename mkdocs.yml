@@ -128,3 +128,5 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - ./home/data-handling/Pandas-split-columns.md
     - Statistics:
       - ./home/statistics/outliers.md
+    - Course Certificate:
+      - ./home/certificate/certificate.md
