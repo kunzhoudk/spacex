@@ -12,14 +12,14 @@
         <meta name="author" content="Kun Zhou">
       
       
-        <link rel="canonical" href="https://www.kunzhouspace.com/home/data-handling/Pandas-split-columns/">
+        <link rel="canonical" href="https://www.kunzhouspace.com/home/machine-learning/gradient-descent/">
       
       <link rel="icon" href="../../../assets/images/logos/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Split a text column into two columns in Pandas DataFrame - KSpace</title>
+        <title>Gradient Descent for Linear Regression - KSpace</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#split-a-text-column-into-two-columns-in-pandas-dataframe" class="md-skip">
+        <a href="#gradient-descent-for-linear-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Split a text column into two columns in Pandas DataFrame
+              Gradient Descent for Linear Regression
             
           </span>
         </div>
@@ -211,13 +211,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-tabs__link">
+      <a href="../feature-scaling/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -227,15 +229,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../Pandas%3Arename-columns/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../data-handling/Pandas%3Arename-columns/" class="md-tabs__link">
         Data Handling
       </a>
     </li>
@@ -374,12 +374,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -402,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-nav__link">
+      <a href="../feature-scaling/" class="md-nav__link">
         Feature scaling
       </a>
     </li>
@@ -414,12 +416,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -440,11 +444,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../machine-learning/gradient-descent/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Gradient Descent for Linear Regression
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Gradient Descent for Linear Regression
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gradient-descent-summary" class="md-nav__link">
+    Gradient descent summary
+  </a>
+  
+    <nav class="md-nav" aria-label="Gradient descent summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute_gradient" class="md-nav__link">
+    compute_gradient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-versus-iterations-of-gradient-descent" class="md-nav__link">
+    Cost versus iterations of gradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contour-plot-of-const-jw-b-versus-b-w-with-path-of-gradient-descent" class="md-nav__link">
+    Contour plot of const J(w, b) versus b, w with path of gradient descent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -469,14 +541,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -499,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Pandas%3Arename-columns/" class="md-nav__link">
+      <a href="../../data-handling/Pandas%3Arename-columns/" class="md-nav__link">
         Rename columns in Pandas
       </a>
     </li>
@@ -511,52 +581,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Split a text column into two columns in Pandas DataFrame
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data-handling/Pandas-split-columns/" class="md-nav__link">
         Split a text column into two columns in Pandas DataFrame
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-seriesstrsplit-functions" class="md-nav__link">
-    Using Series.str.split() functions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -691,9 +720,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-seriesstrsplit-functions" class="md-nav__link">
-    Using Series.str.split() functions
+  <a href="#gradient-descent-summary" class="md-nav__link">
+    Gradient descent summary
   </a>
+  
+    <nav class="md-nav" aria-label="Gradient descent summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute_gradient" class="md-nav__link">
+    compute_gradient
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-versus-iterations-of-gradient-descent" class="md-nav__link">
+    Cost versus iterations of gradient descent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contour-plot-of-const-jw-b-versus-b-w-with-path-of-gradient-descent" class="md-nav__link">
+    Contour plot of const J(w, b) versus b, w with path of gradient descent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -711,34 +767,78 @@
                 
 
 
-<h1 id="split-a-text-column-into-two-columns-in-pandas-dataframe">Split a text column into two columns in Pandas DataFrame<a class="headerlink" href="#split-a-text-column-into-two-columns-in-pandas-dataframe" title="Permanent link"> ¶</a></h1>
-<h2 id="using-seriesstrsplit-functions"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Using Series.str.split() functions<a class="headerlink" href="#using-seriesstrsplit-functions" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John Larter&#39;</span><span class="p">,</span> <span class="s1">&#39;Robert Junior&#39;</span><span class="p">,</span> <span class="s1">&#39;Jonny Depp&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;age&#39;</span><span class="p">:[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">36</span><span class="p">]})</span>
+<h1 id="gradient-descent-for-linear-regression">Gradient Descent for Linear Regression<a class="headerlink" href="#gradient-descent-for-linear-regression" title="Permanent link"> ¶</a></h1>
+<h2 id="gradient-descent-summary">Gradient descent summary<a class="headerlink" href="#gradient-descent-summary" title="Permanent link"> ¶</a></h2>
+<p>A linear model that predicts <span class="arithmatex">\(f_{w, b}(x^{(i)})\)</span>:</p>
+<div class="arithmatex">\[f_{w, b}(x^{(i)}) = wx^{(i)} + b \tag{1}\]</div>
+<p>In linear regression, you utilize input training data to fit the parameters <span class="arithmatex">\(w\)</span>, <span class="arithmatex">\(b\)</span> by minimizing a measure of the error between our predictions <span class="arithmatex">\(f_{w, b}(x^{(i)})\)</span> and the actual data <span class="arithmatex">\(y^{(i)}\)</span>. The measure is called the <span class="arithmatex">\(cost\)</span>, <span class="arithmatex">\(J(w, b)\)</span>. In training, you measure the cost over all of our training samples <span class="arithmatex">\((x^{(i)}, y^{(i)})\)</span></p>
+<div class="arithmatex">\[J(w, b) = \frac{1}{2m} \sum\limits_{i = 0}^{m-1} (f_{w, b}(x^{(i)}) - y^{(i)})^2\tag{2}\]</div>
+<p><em>gradient descent</em> was described as:</p>
+<div class="arithmatex">\[\begin{align*} \text{repeat}&amp;\text{ until convergence:} \; \lbrace \newline
+\; w &amp;= w -  \alpha \frac{\partial J(w, b)}{\partial w} \tag{3}  \; \newline 
+ b &amp;= b -  \alpha \frac{\partial J(w, b)}{\partial b}  \newline \rbrace
+\end{align*}\]</div>
+<p>where, parameters <span class="arithmatex">\(w\)</span>, <span class="arithmatex">\(b\)</span> are updated simultaneously.<br />
+The gradient is defined as:</p>
+<div class="arithmatex">\[
+\begin{align}
+\frac{\partial J(w, b)}{\partial w}  &amp;= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w, b}(x^{(i)}) - y^{(i)})x^{(i)} \tag{4}\\
+  \frac{\partial J(w, b)}{\partial b}  &amp;= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w, b}(x^{(i)}) - y^{(i)}) \tag{5}\\
+\end{align}
+\]</div>
+<p>Here <em>simultaniously</em> means that you calculate the partial derivatives for all the parameters before updating any of the parameters.</p>
+<h3 id="compute_gradient">compute_gradient<a class="headerlink" href="#compute_gradient" title="Permanent link"> ¶</a></h3>
+<p><code>compute_gradient</code> implements (4) and (5) above and returns <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial w}\)</span>, <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial b}\)</span>. The embedded comments describe the operations.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">compute_gradient</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span> 
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Computes the gradient for linear regression </span>
+<span class="sd">    Args:</span>
+<span class="sd">      x (ndarray (m,)): Data, m examples </span>
+<span class="sd">      y (ndarray (m,)): target values</span>
+<span class="sd">      w,b (scalar)    : model parameters  </span>
+<span class="sd">    Returns</span>
+<span class="sd">      dj_dw (scalar): The gradient of the cost w.r.t. the parameters w</span>
+<span class="sd">      dj_db (scalar): The gradient of the cost w.r.t. the parameter b     </span>
+<span class="sd">     &quot;&quot;&quot;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Given Dataframe is :</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
+    <span class="c1"># Number of training examples</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>    
+    <span class="n">dj_dw</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">dj_db</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="c1"># bydefault splitting is done on the basis of single space.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Splitting &#39;Name&#39; column into two different columns :</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span>
-                                  <span class="n">df</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>  
+        <span class="n">f_wb</span> <span class="o">=</span> <span class="n">w</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span> 
+        <span class="n">dj_dw_i</span> <span class="o">=</span> <span class="p">(</span><span class="n">f_wb</span> <span class="o">-</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+        <span class="n">dj_db_i</span> <span class="o">=</span> <span class="n">f_wb</span> <span class="o">-</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+        <span class="n">dj_db</span> <span class="o">+=</span> <span class="n">dj_db_i</span>
+        <span class="n">dj_dw</span> <span class="o">+=</span> <span class="n">dj_dw_i</span> 
+    <span class="n">dj_dw</span> <span class="o">=</span> <span class="n">dj_dw</span> <span class="o">/</span> <span class="n">m</span> 
+    <span class="n">dj_db</span> <span class="o">=</span> <span class="n">dj_db</span> <span class="o">/</span> <span class="n">m</span> 
+
+    <span class="k">return</span> <span class="n">dj_dw</span><span class="p">,</span> <span class="n">dj_db</span>
 </code></pre></div>
-<p>The output is </p>
-<p><img alt="Image title" src="../images/split_columns_1.png" width="500" /></p>
-<p>Split Name column into “First” and “Last” column respectively and add it to the existing Dataframe.</p>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># create a new data frame</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John_Larter&#39;</span><span class="p">,</span> <span class="s1">&#39;Robert_Junior&#39;</span><span class="p">,</span> <span class="s1">&#39;Jonny_Depp&#39;</span><span class="p">],</span>
-                    <span class="s1">&#39;age&#39;</span><span class="p">:[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">36</span><span class="p">]})</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Given Dataframe is :</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1"># Adding two new columns to the existing dataframe.</span>
-<span class="c1"># bydefault splitting is done on the basis of &#39;_&#39;.</span>
-<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;First&#39;</span><span class="p">,</span><span class="s1">&#39;Last&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> After adding two new columns : </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">)</span>
-</code></pre></div>
-The output is </p>
-<p><img alt="Image title" src="../images/split_columns_2.png" width="500" /></p>
+<p><img alt="cost_vs_w" src="../images/cost_vs_w.png" title="cost_vs_w" /></p>
+<p>Above, the left plot shows <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial w}\)</span> or the slope of the cost curve relative to <span class="arithmatex">\(w\)</span> at three points. On the right side of the plot, the derivative is positive, while on the left it is negative. Due to the 'bowl shape', the derivatives will always lead gradient descent toward the bottom where the gradient is zero.</p>
+<p>The left plot has fixed <span class="arithmatex">\(b=100\)</span>. Gradient descent will utilize both <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial w}\)</span> and <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial b}\)</span> to update parameters. The 'quiver plot' on the right provides a means of viewing the gradient of both parameters. The arrow sizes reflect the magnitude of the gradient at that point. The direction and slope of the arrow reflects the ratio of <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial w}\)</span> and <span class="arithmatex">\(\frac{\partial J(w, b)}{\partial b}\)</span> at that point.
+Note that the gradient points <em>away</em> from the minimum. Review equation (3) above. The scaled gradient is <em>subtracted</em> from the current value of <span class="arithmatex">\(w\)</span> or <span class="arithmatex">\(b\)</span>. This moves the parameter in a direction that will reduce cost.</p>
+<h3 id="cost-versus-iterations-of-gradient-descent">Cost versus iterations of gradient descent<a class="headerlink" href="#cost-versus-iterations-of-gradient-descent" title="Permanent link"> ¶</a></h3>
+<p>A plot of cost versus iterations is a useful measure of progress in gradient descent. Cost should always decrease in successful runs. The change in cost is so rapid initially, it is useful to plot the initial decent on a different scale than the final descent. In the plots below, note the scale of cost on the axes and the iteration step.</p>
+<p><img alt="cost_vs_iteration" src="../images/cost_vs_iteration.png" title="cost_vs_iteration" /></p>
+<h3 id="contour-plot-of-const-jw-b-versus-b-w-with-path-of-gradient-descent">Contour plot of const J(w, b) versus b, w with path of gradient descent<a class="headerlink" href="#contour-plot-of-const-jw-b-versus-b-w-with-path-of-gradient-descent" title="Permanent link"> ¶</a></h3>
+<p>the contour plot shows the <span class="arithmatex">\(cost(w, b)\)</span> over a range of <span class="arithmatex">\(w\)</span> and <span class="arithmatex">\(b\)</span>. Cost levels are represented by the rings. Overlayed, using red arrows, is the path of gradient descent. Here are some things to note:</p>
+<ul>
+<li>The path makes steady (monotonic) progress toward its goal.</li>
+<li>initial steps are much larger than the steps near the goal.</li>
+</ul>
+<p><img alt="" src="../images/path_of_gradient_descent.png" /></p>
+<p><strong>Zooming in</strong>, we can see that final steps of gradient descent. Note the distance between steps shrinks as the gradient approaches zero.</p>
+<p><img alt="" src="../images/path_of_gradient_descent2.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Reference</p>
+<ul>
+<li><img alt="📒" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d2.svg" title=":ledger:" /> <a href="https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent">Coursera:Supervised Machine Learning</a></li>
+</ul>
+</div>
 
               
             </article>
@@ -754,7 +854,7 @@ The output is </p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../Pandas%3Arename-columns/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Rename columns in Pandas" rel="prev">
+        <a href="../feature-scaling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Feature scaling" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -763,20 +863,20 @@ The output is </p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Rename columns in Pandas
+              Feature scaling
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../statistics/outliers/" class="md-footer__link md-footer__link--next" aria-label="Next: Ways to identify outliers" rel="next">
+        <a href="../../data-handling/Pandas%3Arename-columns/" class="md-footer__link md-footer__link--next" aria-label="Next: Rename columns in Pandas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Ways to identify outliers
+              Rename columns in Pandas
             </div>
           </div>
           <div class="md-footer__button md-icon">
