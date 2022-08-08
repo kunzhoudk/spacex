@@ -121,6 +121,7 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
     - About Me:
       - index.md
       - Publications: ./home/publications.md # PATH: is given based on file structure
+      - Course Certificate: ./home/certificate/certificate.md
     - Machine Learning:
       - ./home/machine-learning/feature-scaling.md
       - Gradient Descent:
@@ -130,5 +131,6 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - ./home/data-handling/Pandas-split-columns.md
     - Statistics:
       - ./home/statistics/outliers.md
-    - Course Certificate:
-      - ./home/certificate/certificate.md
+    - Streamlit:
+      - ./home/streamlit/what_is_streamlit.md
+      - ./home/streamlit/display_text.md
