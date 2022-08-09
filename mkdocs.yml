@@ -134,3 +134,6 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
     - Streamlit:
       - ./home/streamlit/what_is_streamlit.md
       - ./home/streamlit/display_text.md
+      - ./home/streamlit/widgets.md
+      - ./home/streamlit/text_input.md
+

@@ -1,4 +1,3 @@
-
 # Display texts
 
 ```python
@@ -57,7 +56,6 @@ st.write(dir(st))
 st.help(range)
 ```
 
-
 !!! info "Reference and related articles"
-    * :ledger: [Text elements](https://docs.streamlit.io/library/api-reference/text)
-    * :ledger: [Python Tutorial: Streamlit](https://www.datacamp.com/tutorial/streamlit#3-how-to-use-streamlit)
+    - :ledger: [Text elements](https://docs.streamlit.io/library/api-reference/text)
+    - :ledger: [Python Tutorial: Streamlit](https://www.datacamp.com/tutorial/streamlit#3-how-to-use-streamlit)
