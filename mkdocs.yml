@@ -126,6 +126,7 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - ./home/machine-learning/feature-scaling.md
       - Gradient Descent:
         - ./home/machine-learning/gradient-descent.md
+      - ./home/machine-learning/learning_rate.md
     - Data Handling:
       - ./home/data-handling/Pandas:rename-columns.md
       - ./home/data-handling/Pandas-split-columns.md
