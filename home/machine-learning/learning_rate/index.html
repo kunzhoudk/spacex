@@ -12,14 +12,14 @@
         <meta name="author" content="Kun Zhou">
       
       
-        <link rel="canonical" href="https://www.kunzhouspace.com/home/streamlit/display_text/">
+        <link rel="canonical" href="https://www.kunzhouspace.com/home/machine-learning/learning_rate/">
       
       <link rel="icon" href="../../../assets/images/logos/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Display texts - KSpace</title>
+        <title>Learning rate - KSpace</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#display-texts" class="md-skip">
+        <a href="#learning-rate" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Display texts
+              Learning rate
             
           </span>
         </div>
@@ -211,13 +211,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-tabs__link">
+      <a href="../feature-scaling/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -259,15 +261,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../what_is_streamlit/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../streamlit/what_is_streamlit/" class="md-tabs__link">
         Streamlit
       </a>
     </li>
@@ -388,12 +388,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -416,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-nav__link">
+      <a href="../feature-scaling/" class="md-nav__link">
         Feature scaling
       </a>
     </li>
@@ -456,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/gradient-descent/" class="md-nav__link">
+      <a href="../gradient-descent/" class="md-nav__link">
         Gradient Descent for Linear Regression
       </a>
     </li>
@@ -475,11 +477,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../machine-learning/learning_rate/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Learning rate
       </a>
+      
     </li>
   
 
@@ -607,14 +619,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -637,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_streamlit/" class="md-nav__link">
+      <a href="../../streamlit/what_is_streamlit/" class="md-nav__link">
         What is Streamlit?
       </a>
     </li>
@@ -649,21 +659,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../streamlit/display_text/" class="md-nav__link">
         Display texts
       </a>
-      
     </li>
   
 
@@ -675,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../widgets/" class="md-nav__link">
+      <a href="../../streamlit/widgets/" class="md-nav__link">
         Streamlit Widget
       </a>
     </li>
@@ -689,7 +689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../text_input/" class="md-nav__link">
+      <a href="../../streamlit/text_input/" class="md-nav__link">
         Text Inputs
       </a>
     </li>
@@ -735,68 +735,18 @@
                 
 
 
-<h1 id="display-texts">Display texts<a class="headerlink" href="#display-texts" title="Permanent link"> ¶</a></h1>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span> 
-
-<span class="c1"># Working with and Displaying Text </span>
-<span class="n">st</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Hello World this is a text&quot;</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Johnny&quot;</span>
-<span class="n">st</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;This is so </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
-
-<span class="c1"># Title</span>
-<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;This is a title&quot;</span><span class="p">)</span>
-
-<span class="c1"># Header</span>
-<span class="n">st</span><span class="o">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&quot;This is a header&quot;</span><span class="p">)</span>
-
-<span class="c1"># Subheader</span>
-<span class="n">st</span><span class="o">.</span><span class="n">subheader</span><span class="p">(</span><span class="s2">&quot;This is a subheader&quot;</span><span class="p">)</span>
-
-<span class="c1"># Markdown</span>
-<span class="n">st</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="s2">&quot;## This is markdown&quot;</span><span class="p">)</span>
-
-<span class="c1"># LaTeX</span>
-<span class="n">st</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39; a+a r^1+a r^2+a r^3 &#39;&#39;&#39;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="s1">     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =</span>
-<span class="s1">     \sum_{k=0}^{n-1} ar^k =</span>
-<span class="s1">     a \left(\frac{1-r^</span><span class="si">{n}</span><span class="s1">}{1-r}\right)</span>
-<span class="s1">     &#39;&#39;&#39;</span><span class="p">)</span>
-
-<span class="c1"># Caption used for captions, asides, footnotes, sidenotes, and other explanatory text.</span>
-<span class="n">st</span><span class="o">.</span><span class="n">caption</span><span class="p">(</span><span class="s2">&quot;this is the caption&quot;</span><span class="p">)</span>
-
-<span class="c1"># Code</span>
-<span class="n">st</span><span class="o">.</span><span class="n">code</span><span class="p">(</span><span class="s2">&quot;x=2021&quot;</span><span class="p">)</span>
-
-<span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;def hello():</span>
-<span class="s1">     print(&quot;Hello, Streamlit!&quot;)&#39;&#39;&#39;</span>
-<span class="n">st</span><span class="o">.</span><span class="n">code</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">)</span>
-
-<span class="c1"># Displaying Colored Text/Bootstraps Alert</span>
-<span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="s2">&quot;Successful&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;This is danger&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;This is information&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;This is an error&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;This is an exception&quot;</span><span class="p">)</span>
-
-<span class="c1"># Superfunction</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Normal Text&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;## This is a markdown text&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">st</span><span class="p">))</span>
-
-<span class="c1"># Help Info</span>
-<span class="n">st</span><span class="o">.</span><span class="n">help</span><span class="p">(</span><span class="nb">range</span><span class="p">)</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Reference and related articles</p>
-<ul>
-<li><img alt="📒" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d2.svg" title=":ledger:" /> <a href="https://docs.streamlit.io/library/api-reference/text">Text elements</a></li>
-<li><img alt="📒" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d2.svg" title=":ledger:" /> <a href="https://www.datacamp.com/tutorial/streamlit#3-how-to-use-streamlit">Python Tutorial: Streamlit</a></li>
-</ul>
-</div>
+<h1 id="learning-rate">Learning rate<a class="headerlink" href="#learning-rate" title="Permanent link"> ¶</a></h1>
+<p>In machine learning and statistics, the learning rate <span class="arithmatex">\(\alpha\)</span> is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function.</p>
+<p>Let's run gradient descent and try a few settings of <span class="arithmatex">\(\alpha\)</span> on our data set.</p>
+<p><img alt="big_learning_rate" src="../images/learning_rate_big.png" /></p>
+<p>The plot on the right shows the value of one of the parameters, <span class="arithmatex">\(w_0\)</span>. At each iteration, it is overshooting the optimal value and as a result, cost ends up <em>increasing</em> rather than approaching the minimum. Note that this is not a completely accurate picture as there are 4 parameters being modified each pass rather than just one. This plot is only showing <span class="arithmatex">\(w_0\)</span> with the other parameters fixed at begin values. In this and later plots you may notice the blue and orange lines being slightly off.</p>
+<p>Let's try a bit smaller value and see what happens.</p>
+<p><img alt="small_learning_rate" src="../images/learning_rate_small.png" /></p>
+<p>On the left, you see that cost is decreasing as it should. On the right, you can see that <span class="arithmatex">\(w_0\)</span> is still oscillating around the minimum, but it is decreasing each iteration rather than increasing. Note above that <code>dj_dw[0]</code> changes sign with each iteration as <code>w[0]</code> jumps over the optimal value.
+This alpha value will converge. You can vary the number of iterations to see how it behaves.</p>
+<p>Let's try a bit smaller value for <span class="arithmatex">\(\alpha\)</span> and see what happens.</p>
+<p><img alt="smaller_learning_rate" src="../images/learning_rate_smaller.png" /></p>
+<p>On the left, you see that cost is decreasing as it should. On the right you can see that <span class="arithmatex">\(w_0\)</span> is decreasing without crossing the minimum. Note above that <code>dj_w0</code> is negative throughout the run. This solution will also converge, though not quite as quickly as the previous example.</p>
 
               
             </article>
@@ -812,7 +762,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../what_is_streamlit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is Streamlit?" rel="prev">
+        <a href="../gradient-descent/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Gradient Descent for Linear Regression" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -821,20 +771,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              What is Streamlit?
+              Gradient Descent for Linear Regression
             </div>
           </div>
         </a>
       
       
         
-        <a href="../widgets/" class="md-footer__link md-footer__link--next" aria-label="Next: Streamlit Widget" rel="next">
+        <a href="../../data-handling/Pandas%3Arename-columns/" class="md-footer__link md-footer__link--next" aria-label="Next: Rename columns in Pandas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Streamlit Widget
+              Rename columns in Pandas
             </div>
           </div>
           <div class="md-footer__button md-icon">
