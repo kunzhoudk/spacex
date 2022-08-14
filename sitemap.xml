@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.kunzhouspace.com/home/machine-learning/feature_engineering/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/gradient-descent/</loc>
          <lastmod>2022-08-14</lastmod>
          <changefreq>daily</changefreq>
