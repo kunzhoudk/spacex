@@ -12,14 +12,14 @@
         <meta name="author" content="Kun Zhou">
       
       
-        <link rel="canonical" href="https://www.kunzhouspace.com/home/streamlit/widgets/">
+        <link rel="canonical" href="https://www.kunzhouspace.com/home/machine-learning/bias-variance-tradeoff/">
       
       <link rel="icon" href="../../../assets/images/logos/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Streamlit Widget - KSpace</title>
+        <title>Bias-Variance Tradeoff - KSpace</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#streamlit-widget" class="md-skip">
+        <a href="#bias-variance-tradeoff" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Streamlit Widget
+              Bias-Variance Tradeoff
             
           </span>
         </div>
@@ -211,13 +211,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-tabs__link">
+      <a href="../feature-scaling/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -259,15 +261,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../what_is_streamlit/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../streamlit/what_is_streamlit/" class="md-tabs__link">
         Streamlit
       </a>
     </li>
@@ -388,12 +388,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -416,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/feature-scaling/" class="md-nav__link">
+      <a href="../feature-scaling/" class="md-nav__link">
         Feature scaling
       </a>
     </li>
@@ -430,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/feature_engineering/" class="md-nav__link">
+      <a href="../feature_engineering/" class="md-nav__link">
         Feature Engineering
       </a>
     </li>
@@ -470,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/gradient-descent/" class="md-nav__link">
+      <a href="../gradient-descent/" class="md-nav__link">
         Gradient Descent for Linear Regression
       </a>
     </li>
@@ -491,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../machine-learning/learning_rate/" class="md-nav__link">
+      <a href="../learning_rate/" class="md-nav__link">
         Learning rate
       </a>
     </li>
@@ -503,11 +505,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../machine-learning/bias-variance-tradeoff/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bias-Variance Tradeoff
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Bias-Variance Tradeoff
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-bias" class="md-nav__link">
+    What is bias?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-variance" class="md-nav__link">
+    What is variance?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#biasvariance-decomposition-of-mean-squared-error" class="md-nav__link">
+    Bias–variance decomposition of mean squared error
+  </a>
+  
+    <nav class="md-nav" aria-label="Bias–variance decomposition of mean squared error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivation" class="md-nav__link">
+    Derivation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -635,14 +705,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -665,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../what_is_streamlit/" class="md-nav__link">
+      <a href="../../streamlit/what_is_streamlit/" class="md-nav__link">
         What is Streamlit?
       </a>
     </li>
@@ -679,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../display_text/" class="md-nav__link">
+      <a href="../../streamlit/display_text/" class="md-nav__link">
         Display texts
       </a>
     </li>
@@ -691,94 +759,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Streamlit Widget
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../streamlit/widgets/" class="md-nav__link">
         Streamlit Widget
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-buttons" class="md-nav__link">
-    Working with Buttons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-radiobuttons" class="md-nav__link">
-    Working with RadioButtons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-checkbox" class="md-nav__link">
-    Working with Checkbox
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-expander" class="md-nav__link">
-    Working with Expander
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-one-select" class="md-nav__link">
-    Working with one select
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-multiple-select" class="md-nav__link">
-    Working with multiple select
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-slider" class="md-nav__link">
-    Working with slider
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -790,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../text_input/" class="md-nav__link">
+      <a href="../../streamlit/text_input/" class="md-nav__link">
         Text Inputs
       </a>
     </li>
@@ -831,51 +816,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#working-with-buttons" class="md-nav__link">
-    Working with Buttons
+  <a href="#what-is-bias" class="md-nav__link">
+    What is bias?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-radiobuttons" class="md-nav__link">
-    Working with RadioButtons
+  <a href="#what-is-variance" class="md-nav__link">
+    What is variance?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-checkbox" class="md-nav__link">
-    Working with Checkbox
+  <a href="#biasvariance-decomposition-of-mean-squared-error" class="md-nav__link">
+    Bias–variance decomposition of mean squared error
+  </a>
+  
+    <nav class="md-nav" aria-label="Bias–variance decomposition of mean squared error">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivation" class="md-nav__link">
+    Derivation
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-expander" class="md-nav__link">
-    Working with Expander
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-one-select" class="md-nav__link">
-    Working with one select
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-multiple-select" class="md-nav__link">
-    Working with multiple select
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#working-with-slider" class="md-nav__link">
-    Working with slider
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -893,84 +863,67 @@
                 
 
 
-<h1 id="streamlit-widget">Streamlit Widget<a class="headerlink" href="#streamlit-widget" title="Permanent link"> ¶</a></h1>
-<h2 id="working-with-buttons">Working with Buttons<a class="headerlink" href="#working-with-buttons" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Jesse&quot;</span>
-<span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s2">&quot;Submit&quot;</span><span class="p">):</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Name: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()))</span>
-</code></pre></div>
-<p>If you have multiple buttons, then you can use "key" attribute to give a unique name for each button </p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s2">&quot;Submit&quot;</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s1">&#39;new02&#39;</span><span class="p">):</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;First Name: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
-</code></pre></div>
-<p>To invoke a function when click on a button </p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="s1">&#39;count&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">st</span><span class="o">.</span><span class="n">session_state</span><span class="p">:</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">session_state</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">def</span> <span class="nf">increment_counter</span><span class="p">():</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">session_state</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="n">st</span><span class="o">.</span><span class="n">button</span><span class="p">(</span><span class="s1">&#39;Increment&#39;</span><span class="p">,</span> <span class="n">on_click</span><span class="o">=</span><span class="n">increment_counter</span><span class="p">)</span>
-
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;You clicked to increment count, total count = &#39;</span><span class="p">,</span>
-         <span class="n">st</span><span class="o">.</span><span class="n">session_state</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="working-with-radiobuttons">Working with RadioButtons<a class="headerlink" href="#working-with-radiobuttons" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">status</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">radio</span><span class="p">(</span><span class="s2">&quot;What is your status&quot;</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;Active&quot;</span><span class="p">,</span> <span class="s2">&quot;Inactive&quot;</span><span class="p">))</span>
-<span class="k">if</span> <span class="n">status</span> <span class="o">==</span> <span class="s1">&#39;Active&#39;</span><span class="p">:</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="s2">&quot;You are active&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">status</span> <span class="o">==</span> <span class="s2">&quot;Inactive&quot;</span><span class="p">:</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Inactive&quot;</span><span class="p">)</span>
-
-<span class="n">city_options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;Arizona - Chandler - 5&quot;</span><span class="p">,</span>
-    <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;Arizona - Phoenix - 4&quot;</span><span class="p">,</span>
-    <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;New Jersey - Newark -3&quot;</span><span class="p">,</span>
-    <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Oregon - Portland - 2&quot;</span><span class="p">,</span>
-    <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Seattle - Washington - 1&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-
-<span class="n">city_mode</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">sidebar</span><span class="o">.</span><span class="n">radio</span><span class="p">(</span>
-    <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Choose a city option:&quot;</span><span class="p">,</span>
-    <span class="n">options</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-    <span class="n">format_func</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">city_options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
-<span class="p">)</span>
-
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;You have chosen </span><span class="si">{</span><span class="n">city_options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">city_mode</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span>
-         <span class="sa">f</span><span class="s1">&#39; with the value </span><span class="si">{</span><span class="n">city_mode</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="working-with-checkbox">Working with Checkbox<a class="headerlink" href="#working-with-checkbox" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">checkbox</span><span class="p">(</span><span class="s2">&quot;Show/Hide&quot;</span><span class="p">):</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;Showing something&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="working-with-expander">Working with Expander<a class="headerlink" href="#working-with-expander" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">):</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="s2">&quot;Hello Python&quot;</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">st</span><span class="o">.</span><span class="n">expander</span><span class="p">(</span><span class="s2">&quot;Julia&quot;</span><span class="p">):</span>
-    <span class="n">st</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="s2">&quot;hello Julia&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="working-with-one-select">Working with one select<a class="headerlink" href="#working-with-one-select" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">my_lang</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span><span class="s2">&quot;Julia&quot;</span><span class="p">,</span><span class="s2">&quot;Go&quot;</span><span class="p">,</span><span class="s2">&quot;Rust&quot;</span><span class="p">]</span>
-<span class="n">choice</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">selectbox</span><span class="p">(</span><span class="s2">&quot;Language&quot;</span><span class="p">,</span><span class="n">my_lang</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;You selected </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">choice</span><span class="p">))</span>
-</code></pre></div>
-<h2 id="working-with-multiple-select">Working with multiple select<a class="headerlink" href="#working-with-multiple-select" title="Permanent link"> ¶</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">spoken_lang</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;English&quot;</span><span class="p">,</span><span class="s2">&quot;French&quot;</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">,</span><span class="s2">&quot;Twi&quot;</span><span class="p">)</span>
-<span class="n">my_spoken_lang</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">multiselect</span><span class="p">(</span><span class="s2">&quot;Spoken Lang&quot;</span><span class="p">,</span><span class="n">spoken_lang</span><span class="p">,</span><span class="n">default</span><span class="o">=</span><span class="s2">&quot;English&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="working-with-slider">Working with slider<a class="headerlink" href="#working-with-slider" title="Permanent link"> ¶</a></h2>
-<p>The difference between <code>st.slider</code> and <code>st.select_slider</code> is that slider only accepts numerical or date/time data and takes a range as input, while select_slider accepts any datatype and takes an iterable set of options.</p>
+<h1 id="bias-variance-tradeoff">Bias-Variance Tradeoff<a class="headerlink" href="#bias-variance-tradeoff" title="Permanent link"> ¶</a></h1>
+<p>The bias–variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. High-variance learning methods may be able to represent their training set well but are at risk of overfitting to noisy or unrepresentative training data. In contrast, algorithms with high bias typically produce simpler models that may fail to capture important regularities (i.e. underfit) in the data.</p>
+<p>So let’s start with the basics and see how they make difference to our machine learning Models.</p>
+<h2 id="what-is-bias"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /> What is bias?<a class="headerlink" href="#what-is-bias" title="Permanent link"> ¶</a></h2>
+<p>Bias is the difference between the average prediction of our model and the correct value which we are trying to predict. Model with high bias pays very little attention to the training data and oversimplifies the model. It always leads to high error on training and test data. High bias can cause an algorithm to miss the relevant relations between features and target outputs (<strong>underfitting</strong>)</p>
+<h2 id="what-is-variance"><img alt="❓" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2753.svg" title=":question:" /> What is variance?<a class="headerlink" href="#what-is-variance" title="Permanent link"> ¶</a></h2>
+<p>Variance is the variability of model prediction for a given data point or a value which tells us spread of our data. Model with high variance pays a lot of attention to training data and does not generalize on the data which it hasn’t seen before. As a result, such models perform very well on training data but has high error rates on test data(<strong>overfitting</strong>).</p>
+<h2 id="biasvariance-decomposition-of-mean-squared-error"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Bias–variance decomposition of mean squared error<a class="headerlink" href="#biasvariance-decomposition-of-mean-squared-error" title="Permanent link"> ¶</a></h2>
+<p>Suppose that we have a training set consisting of a set of points <span class="arithmatex">\(x_{1}, \dots, x_{n}\)</span> and real values <span class="arithmatex">\(y_{i}\)</span> associated with each point <span class="arithmatex">\(x_{i}\)</span>. We assume that there is a function with noise <span class="arithmatex">\({y=f(x)+\varepsilon}\)</span>, where the noise, <span class="arithmatex">\(\varepsilon\)</span>, has zero mean and variance <span class="arithmatex">\(\sigma ^{2}\)</span>.</p>
+<p>We want to find a function <span class="arithmatex">\({\displaystyle {\hat {f}}(x; D)}\)</span>, that approximates the true function <span class="arithmatex">\(f(x)\)</span> as well as possible, by means of some learning algorithm based on a training dataset (sample) <span class="arithmatex">\({\displaystyle D=\{(x_{1}, y_{1})\dots, (x_{n}, y_{n})\}}\)</span>. We make "as well as possible" precise by measuring the mean squared error between <span class="arithmatex">\({\displaystyle {\hat {f}}(x; D)}\)</span>: we want <span class="arithmatex">\({\displaystyle (y-{\hat {f}}(x; D))^{2}}\)</span> to be minimal, both for <span class="arithmatex">\(x_{1}, \dots, x_{n}\)</span> and for points outside of our sample. Of course, we cannot hope to do so perfectly, since the <span class="arithmatex">\(y_{i}\)</span> contain noise <span class="arithmatex">\(\varepsilon\)</span>; this means we must be prepared to accept an irreducible error in any function we come up with.</p>
+<p>Finding an <span class="arithmatex">\({\hat {f}}\)</span> that generalizes to points outside of the training set can be done with any of the countless algorithms used for supervised learning. It turns out that whichever function <span class="arithmatex">\({\hat {f}}\)</span> we select, we can decompose its expected error on an unseen sample <span class="arithmatex">\(x\)</span> as follows:</p>
+<div class="arithmatex">\[{\displaystyle \operatorname {E}_{D, \varepsilon}{\Big[}{\big (}y-{\hat {f}}(x; D){\big)}^{2}{\Big ]}={\Big(}\operatorname {Bias} _{D}{\big[}{\hat {f}}(x; D){\big]}{\Big)}^{2}+\operatorname {Var} _{D}{\big[}{\hat {f}}(x; D){\big]}+\sigma ^{2}}\]</div>
+<p>where</p>
+<div class="arithmatex">\[{\displaystyle \operatorname{Bias}_{D}{\big [}{\hat {f}}(x; D){\big ]}=\operatorname {E} _{D}{\big [}{\hat {f}}(x; D){\big ]}-f(x)}\]</div>
+<p>and</p>
+<div class="arithmatex">\[\operatorname{Var}_D\big[\hat{f}(x; D)\big] = \operatorname{E}_D[\big(\operatorname{E}_D[\hat{f}(x; D)] - \hat{f}(x; D)\big)^2].\]</div>
+<p>The expectation ranges over different choices of the training set <span class="arithmatex">\(D=\{(x_1, y_1) \dots, (x_n, y_n)\}\)</span>, all sampled from the same joint distribution <span class="arithmatex">\(P(x, y)\)</span> which can for example be done via Bootstrapping (statistics]. 
+The three terms represent:</p>
 <ul>
-<li>Numbers (Int/Float/Dates)
-    <div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">slider</span><span class="p">(</span><span class="s2">&quot;Age&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;age:&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-</code></pre></div></li>
-<li>Any Datatype using Select Slider
-    <div class="highlight"><pre><span></span><code><span class="n">color</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">select_slider</span><span class="p">(</span><span class="s2">&quot;Choose Color&quot;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">))</span>
-<span class="n">st</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;color:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
-</code></pre></div></li>
+<li>the square of the ''bias'' of the learning method, which can be thought of as the error caused by the simplifying assumptions built into the method. E.g., when approximating a non-linear function <span class="arithmatex">\(f(x)\)</span> using a learning method for linear models, there will be error in the estimates <span class="arithmatex">\(\hat{f}(x)\)</span> due to this assumption; </li>
+<li>the ''variance'' of the learning method, or, intuitively, how much the learning method <span class="arithmatex">\(\hat{f}(x)\)</span> will move around its mean; </li>
+<li>the irreducible error <span class="arithmatex">\(\sigma^2\)</span>. </li>
 </ul>
+<p>Since all three terms are non-negative, the irreducible error forms a lower bound on the expected error on unseen samples.</p>
+<p>The more complex the model <span class="arithmatex">\(\hat{f}(x)\)</span> is, the more data points it will capture, and the lower the bias will be. However, complexity will make the model "move" more to capture the data points, and hence its variance will be larger.</p>
+<h3 id="derivation"><img alt="📲" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4f2.svg" title=":calling:" />  Derivation<a class="headerlink" href="#derivation" title="Permanent link"> ¶</a></h3>
+<p>The derivation of the bias–variance decomposition for squared error proceeds as follows. For notational convenience, we abbreviate <span class="arithmatex">\({\displaystyle {\hat {f}}={\hat {f}}(x; D)}\)</span> and we drop the <span class="arithmatex">\(D\)</span> subscript on our expectation operators. First, recall that, by definition, for any random variable <span class="arithmatex">\(X\)</span>, we have</p>
+<div class="arithmatex">\[{\displaystyle \operatorname {Var} [X]=\operatorname {E} [X^{2}]-\operatorname {E} [X]^{2}.}\]</div>
+<p>Rearranging, we get:</p>
+<div class="arithmatex">\[{\displaystyle \operatorname {E} [X^{2}]=\operatorname {Var} [X]+\operatorname {E} [X]^{2}.}\]</div>
+<p>Since <span class="arithmatex">\(f\)</span> is deterministic, i.e. independent of <span class="arithmatex">\(D\)</span>, <span class="arithmatex">\({\displaystyle \operatorname {E} [f]=f.}\)</span></p>
+<p>Thus, given <span class="arithmatex">\({\displaystyle y=f+\varepsilon}\)</span> and <span class="arithmatex">\({\displaystyle \operatorname {E} [\varepsilon ]=0}\)</span> (because <span class="arithmatex">\(\varepsilon\)</span> is noise), implies <span class="arithmatex">\({\displaystyle \operatorname {E} [y]=\operatorname {E} [f+\varepsilon ]=\operatorname {E} [f]=f.}\)</span></p>
+<p>Also, since <span class="arithmatex">\({\displaystyle \operatorname {Var} [\varepsilon ]=\sigma ^{2},}\)</span></p>
+<div class="arithmatex">\[{\displaystyle \operatorname {Var} [y]=\operatorname {E} [(y-\operatorname {E} [y])^{2}]=\operatorname {E} [(y-f)^{2}]=\operatorname {E} [(f+\varepsilon -f)^{2}]=\operatorname {E} [\varepsilon ^{2}]=\operatorname {Var} [\varepsilon ]+\operatorname {E} [\varepsilon ]^{2}=\sigma ^{2}+0^{2}=\sigma ^{2}.}\]</div>
+<p>Thus, since <span class="arithmatex">\(\varepsilon\)</span> and <span class="arithmatex">\({\hat {f}}\)</span> are independent, we can write</p>
+<div class="arithmatex">\[\begin{align} MSE =
+\operatorname{E}\big[(y - \hat{f})^2\big]
+ &amp; = \operatorname{E}\big[(f+\varepsilon  - \hat{f} )^2\big] \\[5pt]
+ &amp; = \operatorname{E}\big[(f+\varepsilon  - \hat{f} +\operatorname{E}[\hat{f}]-\operatorname{E}[\hat{f}])^2\big] \\[5pt]
+ &amp; = \operatorname{E}\big[(f-\operatorname{E}[\hat{f}])^2\big]+\operatorname{E}[\varepsilon^2]+\operatorname{E}\big[(\operatorname{E}[\hat{f}]- \hat{f})^2\big] 
++2\operatorname{E}\big[(f-\operatorname{E}[\hat{f}])\varepsilon\big]
++2\operatorname{E}\big[\varepsilon(\operatorname{E}[\hat{f}]- \hat{f})\big]
++2\operatorname{E}\big[(\operatorname{E}[\hat{f}]- \hat{f})(f-\operatorname{E}[\hat{f}])\big] \\[5pt]
+ &amp; = (f-\operatorname{E}[\hat{f}])^2+\operatorname{E}[\varepsilon^2]+\operatorname{E}\big[(\operatorname{E}[\hat{f}]- \hat{f})^2\big] 
++2(f-\operatorname{E}[\hat{f}])\operatorname{E}[\varepsilon]
++2\operatorname{E}[\varepsilon]\operatorname{E}\big[\operatorname{E}[\hat{f}]- \hat{f}\big]
++2\operatorname{E}\big[\operatorname{E}[\hat{f}]- \hat{f}\big](f-\operatorname{E}[\hat{f}]) \\[5pt]
+ &amp; = (f-\operatorname{E}[\hat{f}])^2+\operatorname{E}[\varepsilon^2]+\operatorname{E}\big[(\operatorname{E}[\hat{f}]- \hat{f})^2\big]\\[5pt]
+ &amp; = (f-\operatorname{E}[\hat{f}])^2+\operatorname{Var}[\varepsilon]+\operatorname{Var}\big[\hat{f}\big]\\[5pt]
+ &amp; = \operatorname{Bias}[\hat{f}]^2+\operatorname{Var}[\varepsilon]+\operatorname{Var}\big[\hat{f}\big]\\[5pt]
+ &amp; = \operatorname{Bias}[\hat{f}]^2+\sigma^2+\operatorname{Var}\big[\hat{f}\big].
+\end{align}\]</div>
+<p>Finally, MSE loss function (or negative log-likelihood) is obtained by taking the expectation value over <span class="arithmatex">\({\displaystyle x\sim P}\)</span> :</p>
+<div class="arithmatex">\[{\displaystyle {\text{MSE}}=\operatorname {E} _{x}{\bigg \{}\operatorname {Bias} _{D}[{\hat {f}}(x; D)]^{2}+\operatorname {Var} _{D}{\big [}{\hat {f}}(x; D){\big ]}{\bigg \}}+\sigma ^{2}.}\]</div>
+<div class="admonition info reference">
+<p class="admonition-title">Info</p>
+<ul>
+<li><img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /> <a href="https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229">Understanding the Bias-Variance Tradeoff</a></li>
+<li><img alt="🔗" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f517.svg" title=":link:" /> <a href="https://en.wikipedia.org/wiki/Bias–variance_tradeoff">Bias–variance tradeoff</a></li>
+</ul>
+</div>
 
               
             </article>
@@ -986,7 +939,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../display_text/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Display texts" rel="prev">
+        <a href="../learning_rate/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Learning rate" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -995,20 +948,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Display texts
+              Learning rate
             </div>
           </div>
         </a>
       
       
         
-        <a href="../text_input/" class="md-footer__link md-footer__link--next" aria-label="Next: Text Inputs" rel="next">
+        <a href="../../data-handling/Pandas%3Arename-columns/" class="md-footer__link md-footer__link--next" aria-label="Next: Rename columns in Pandas" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Text Inputs
+              Rename columns in Pandas
             </div>
           </div>
           <div class="md-footer__button md-icon">
