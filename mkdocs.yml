@@ -124,9 +124,11 @@ nav: # awesome-pages pages plugin uses to folder structure as navigation layout 
       - Course Certificate: ./home/certificate/certificate.md
     - Machine Learning:
       - ./home/machine-learning/feature-scaling.md
+      - ./home/machine-learning/feature_engineering.md
       - Gradient Descent:
         - ./home/machine-learning/gradient-descent.md
       - ./home/machine-learning/learning_rate.md
+      - ./home/machine-learning/bias-variance-tradeoff.md
     - Data Handling:
       - ./home/data-handling/Pandas:rename-columns.md
       - ./home/data-handling/Pandas-split-columns.md
