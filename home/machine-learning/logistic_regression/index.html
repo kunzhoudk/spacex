@@ -925,7 +925,7 @@ Let's implement this in Python.</li>
 </ul>
 <p>if <span class="arithmatex">\(\mathbf{w} \cdot \mathbf{x} + b &gt;= 0\)</span>, the model predicts <span class="arithmatex">\(y=1\)</span></p>
 <p>if <span class="arithmatex">\(\mathbf{w} \cdot \mathbf{x} + b &lt; 0\)</span>, the model predicts <span class="arithmatex">\(y=0\)</span></p>
-<h2 id="plotting-decision-boundary">Plotting decision boundary<a class="headerlink" href="#plotting-decision-boundary" title="Permanent link"> ¶</a></h2>
+<h2 id="plotting-decision-boundary"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Plotting decision boundary<a class="headerlink" href="#plotting-decision-boundary" title="Permanent link"> ¶</a></h2>
 <p>Now, let's go back to our example to understand how the logistic regression model is making predictions.</p>
 <ul>
 <li>Our logistic regression model has the form</li>
@@ -948,7 +948,7 @@ Let's implement this in Python.</li>
 </li>
 </ul>
 <p>As we've seen in the lectures, by using higher order polynomial terms (eg: <span class="arithmatex">\(f(x) = g( x_0^2 + x_1 -1)\)</span>, we can come up with more complex non-linear boundaries.</p>
-<h2 id="costloss-function">Cost(Loss) function<a class="headerlink" href="#costloss-function" title="Permanent link"> ¶</a></h2>
+<h2 id="costloss-function"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Cost(Loss) function<a class="headerlink" href="#costloss-function" title="Permanent link"> ¶</a></h2>
 <p>Recall that loss is defined to apply to one example. Here you combine the losses to form the <strong>cost</strong>, which includes all the examples.</p>
 <p>Recall that for logistic regression, the cost function is of the form </p>
 <div class="arithmatex">\[ J(\mathbf{w}, b) = \frac{1}{m} \sum_{i=0}^{m-1} \left[ loss(f_{\mathbf{w}, b}(\mathbf{x}^{(i)}), y^{(i)}) \right] \tag{1}\]</div>
@@ -975,7 +975,7 @@ Let's implement this in Python.</li>
 <p><img alt="" src="../images/logisticLoss_a.png" /></p>
 <p>The below figure is for the case of <span class="arithmatex">\(y\)</span> is 0. When <span class="arithmatex">\(f\)</span> is 0 or very close to 0, the loss is also going to be 0 or very small value which means that if the true label is 0 and the model's prediction is very close to 0, so it predicts right. The larger the value of <span class="arithmatex">\(f\)</span> gets, the bigger the loss because the prediction is further from the true label 0. In fact, as that prediction approaches 1, the loss actually approaches infinity value. In summary, <strong>the further prediction <span class="arithmatex">\(f_{\mathbf{w},b}(\mathbf{x^{(i)}})\)</span> is from target <span class="arithmatex">\(y^{(i)}\)</span>, the higher the loss.</strong> </p>
 <p><img alt="" src="../images/logisticLoss_b.png" /></p>
-<h2 id="logistic-gradient-descent">Logistic Gradient Descent<a class="headerlink" href="#logistic-gradient-descent" title="Permanent link"> ¶</a></h2>
+<h2 id="logistic-gradient-descent"><img alt="🏷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f3f7.svg" title=":label:" /> Logistic Gradient Descent<a class="headerlink" href="#logistic-gradient-descent" title="Permanent link"> ¶</a></h2>
 <p>Recall the gradient descent algorithm utilizes the gradient calculation:</p>
 <div class="arithmatex">\[\begin{align*}
 &amp;\text{repeat until convergence:} \; \lbrace \\
