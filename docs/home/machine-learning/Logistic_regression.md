@@ -57,7 +57,7 @@ $$ f_{\mathbf{w}, b}(\mathbf{x}^{(i)}) = g(\mathbf{w} \cdot \mathbf{x}^{(i)} + b
   
   if $\mathbf{w} \cdot \mathbf{x} + b < 0$, the model predicts $y=0$
 
-## Plotting decision boundary
+## :label: Plotting decision boundary
 
 Now, let's go back to our example to understand how the logistic regression model is making predictions.
 
@@ -79,7 +79,7 @@ Let's see what this looks like graphically. We'll start by plotting $-3 + x_0+x_
 
 As we've seen in the lectures, by using higher order polynomial terms (eg: $f(x) = g( x_0^2 + x_1 -1)$, we can come up with more complex non-linear boundaries.
 
-## Cost(Loss) function
+## :label: Cost(Loss) function
 
  Recall that loss is defined to apply to one example. Here you combine the losses to form the **cost**, which includes all the examples.
 
@@ -112,7 +112,7 @@ The below figure is for the case of $y$ is 0. When $f$ is 0 or very close to 0, 
 
 ![](./images/logisticLoss_b.png)
 
-## Logistic Gradient Descent
+## :label: Logistic Gradient Descent
 
 Recall the gradient descent algorithm utilizes the gradient calculation:
 
