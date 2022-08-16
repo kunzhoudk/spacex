@@ -12,7 +12,7 @@
         <meta name="author" content="Kun Zhou">
       
       
-        <link rel="canonical" href="https://www.kunzhouspace.com/home/machine-learning/Logistic_regression/">
+        <link rel="canonical" href="https://www.kunzhouspace.com/home/machine-learning/logistic_regression/">
       
       <link rel="icon" href="../../../assets/images/logos/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
@@ -211,13 +211,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../feature-scaling/" class="md-tabs__link">
+      <a href="../feature-scaling/" class="md-tabs__link md-tabs__link--active">
         Machine Learning
       </a>
     </li>
@@ -386,12 +388,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -506,6 +510,89 @@
       <a href="../bias-variance-tradeoff/" class="md-nav__link">
         Bias-Variance Tradeoff
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Logistic Regression
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Logistic Regression
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#formula-for-sigmoid-function" class="md-nav__link">
+    Formula for Sigmoid function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-regression_1" class="md-nav__link">
+    Logistic Regression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-decision-boundary" class="md-nav__link">
+    Plotting decision boundary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#costloss-function" class="md-nav__link">
+    Cost(Loss) function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-gradient-descent" class="md-nav__link">
+    Logistic Gradient Descent
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -757,6 +844,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#plotting-decision-boundary" class="md-nav__link">
+    Plotting decision boundary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#costloss-function" class="md-nav__link">
+    Cost(Loss) function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logistic-gradient-descent" class="md-nav__link">
+    Logistic Gradient Descent
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -807,6 +915,89 @@ Let's implement this in Python.</li>
 <div class="arithmatex">\[ f_{\mathbf{w}, b}(\mathbf{x}^{(i)}) = g(\mathbf{w} \cdot \mathbf{x}^{(i)} + b ) \tag{2} \]</div>
 <p>where</p>
 <p><span class="arithmatex">\(<span class="arithmatex">\(g(z) = \frac{1}{1+e^{-z}}\tag{3}\)</span>\)</span></p>
+<ul>
+<li>
+<p>As you can see, <span class="arithmatex">\(g(z) &gt;= 0.5\)</span> for <span class="arithmatex">\(z &gt;=0\)</span></p>
+</li>
+<li>
+<p>For a logistic regression model, <span class="arithmatex">\(z = \mathbf{w} \cdot \mathbf{x} + b\)</span>. Therefore, </p>
+</li>
+</ul>
+<p>if <span class="arithmatex">\(\mathbf{w} \cdot \mathbf{x} + b &gt;= 0\)</span>, the model predicts <span class="arithmatex">\(y=1\)</span></p>
+<p>if <span class="arithmatex">\(\mathbf{w} \cdot \mathbf{x} + b &lt; 0\)</span>, the model predicts <span class="arithmatex">\(y=0\)</span></p>
+<h2 id="plotting-decision-boundary">Plotting decision boundary<a class="headerlink" href="#plotting-decision-boundary" title="Permanent link"> ¶</a></h2>
+<p>Now, let's go back to our example to understand how the logistic regression model is making predictions.</p>
+<ul>
+<li>Our logistic regression model has the form</li>
+</ul>
+<p><span class="arithmatex">\(f(\mathbf{x}) = g(-3 + x_0+x_1)\)</span></p>
+<ul>
+<li>From what you've learnt above, you can see that this model predicts <span class="arithmatex">\(y=1\)</span> if <span class="arithmatex">\(-3 + x_0+x_1 &gt;= 0\)</span></li>
+</ul>
+<p>Let's see what this looks like graphically. We'll start by plotting <span class="arithmatex">\(-3 + x_0+x_1 = 0\)</span>, which is equivalent to <span class="arithmatex">\(x_1 = 3 - x_0\)</span>.</p>
+<p><img alt="" src="../images/decision_boundary.png" /></p>
+<ul>
+<li>
+<p>In the plot above, the blue line represents the line <span class="arithmatex">\(x_0 + x_1 - 3 = 0\)</span> and it should intersect the x1 axis at 3 (if we set <span class="arithmatex">\(x_1\)</span> = 3, <span class="arithmatex">\(x_0\)</span> = 0) and the x0 axis at 3 (if we set <span class="arithmatex">\(x_1\)</span> = 0, <span class="arithmatex">\(x_0\)</span> = 3). </p>
+</li>
+<li>
+<p>The shaded region represents <span class="arithmatex">\(-3 + x_0+x_1 &lt; 0\)</span>. The region above the line is <span class="arithmatex">\(-3 + x_0+x_1 &gt; 0\)</span>.</p>
+</li>
+<li>
+<p>Any point in the shaded region (under the line) is classified as <span class="arithmatex">\(y=0\)</span>.  Any point on or above the line is classified as <span class="arithmatex">\(y=1\)</span>. This line is known as the "decision boundary".</p>
+</li>
+</ul>
+<p>As we've seen in the lectures, by using higher order polynomial terms (eg: <span class="arithmatex">\(f(x) = g( x_0^2 + x_1 -1)\)</span>, we can come up with more complex non-linear boundaries.</p>
+<h2 id="costloss-function">Cost(Loss) function<a class="headerlink" href="#costloss-function" title="Permanent link"> ¶</a></h2>
+<p>Recall that loss is defined to apply to one example. Here you combine the losses to form the <strong>cost</strong>, which includes all the examples.</p>
+<p>Recall that for logistic regression, the cost function is of the form </p>
+<div class="arithmatex">\[ J(\mathbf{w}, b) = \frac{1}{m} \sum_{i=0}^{m-1} \left[ loss(f_{\mathbf{w}, b}(\mathbf{x}^{(i)}), y^{(i)}) \right] \tag{1}\]</div>
+<p>where</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(loss(f_{\mathbf{w}, b}(\mathbf{x}^{(i)}), y^{(i)})\)</span> is the cost for a single data point, which is:
+    <span class="arithmatex">\(<span class="arithmatex">\(loss(f_{\mathbf{w},b}(\mathbf{x}^{(i)}), y^{(i)}) = -y^{(i)} \log\left(f_{\mathbf{w},b}\left( \mathbf{x}^{(i)} \right) \right) - \left( 1 - y^{(i)}\right) \log \left( 1 - f_{\mathbf{w},b}\left( \mathbf{x}^{(i)} \right) \right) \tag{2}\)</span>\)</span></p>
+</li>
+<li>
+<p>where m is the number of training examples in the data set and:</p>
+</li>
+</ul>
+<p>
+<script type="math/tex; mode=display">
+\begin{align}
+    f_{\mathbf{w},b}(\mathbf{x^{(i)}}) &= g(z^{(i)})\tag{3} \\
+    z^{(i)} &= \mathbf{w} \cdot \mathbf{x}^{(i)}+ b\tag{4} \\
+    g(z^{(i)}) &= \frac{1}{1+e^{-z^{(i)}}}\tag{5} 
+\end{align}
+</script>
+<img alt="" src="../images/logisticLoss_c.png" /></p>
+<p>As in the below figure, <span class="arithmatex">\(f\)</span> is the output of logistic regression, thus <span class="arithmatex">\(f\)</span>is always between 0 and 1 and vertical axis is the loss for different value of <span class="arithmatex">\(f\)</span>. If the predicted probability <span class="arithmatex">\(f\)</span> is close to 1, the true lable is 1, then the loss is very small, pretty much close to 0, because you close to the right answer of the true label being 1. If the algorithm predicts 0.5, which is a bit higher but not that high. Whereas in contrast, if the algorithm were to have outputs at 0.1, it thinks that only a 10 percent change of the tumor being malignant but <span class="arithmatex">\(y\)</span> really is 1(malignant), then the loss is much higher value. </p>
+<p><img alt="" src="../images/logisticLoss_a.png" /></p>
+<p>The below figure is for the case of <span class="arithmatex">\(y\)</span> is 0. When <span class="arithmatex">\(f\)</span> is 0 or very close to 0, the loss is also going to be 0 or very small value which means that if the true label is 0 and the model's prediction is very close to 0, so it predicts right. The larger the value of <span class="arithmatex">\(f\)</span> gets, the bigger the loss because the prediction is further from the true label 0. In fact, as that prediction approaches 1, the loss actually approaches infinity value. In summary, <strong>the further prediction <span class="arithmatex">\(f_{\mathbf{w},b}(\mathbf{x^{(i)}})\)</span> is from target <span class="arithmatex">\(y^{(i)}\)</span>, the higher the loss.</strong> </p>
+<p><img alt="" src="../images/logisticLoss_b.png" /></p>
+<h2 id="logistic-gradient-descent">Logistic Gradient Descent<a class="headerlink" href="#logistic-gradient-descent" title="Permanent link"> ¶</a></h2>
+<p>Recall the gradient descent algorithm utilizes the gradient calculation:</p>
+<div class="arithmatex">\[\begin{align*}
+&amp;\text{repeat until convergence:} \; \lbrace \\
+&amp;  \; \; \;w_j = w_j -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial w_j} \tag{1}  \; &amp; \text{for j := 0..n-1} \\ 
+&amp;  \; \; \;  \; \;b = b -  \alpha \frac{\partial J(\mathbf{w},b)}{\partial b} \\
+&amp;\rbrace
+\end{align*}\]</div>
+<p>Where each iteration performs simultaneous updates on <span class="arithmatex">\(w_j\)</span> for all <span class="arithmatex">\(j\)</span>, where</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial J(\mathbf{w},b)}{\partial w_j}  &amp;= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)})x_{j}^{(i)} \tag{2} \\
+\frac{\partial J(\mathbf{w},b)}{\partial b}  &amp;= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{\mathbf{w},b}(\mathbf{x}^{(i)}) - y^{(i)}) \tag{3} 
+\end{align*}\]</div>
+<ul>
+<li>m is the number of training examples in the data set      </li>
+<li><span class="arithmatex">\(f_{\mathbf{w},b}(x^{(i)})\)</span> is the model's prediction, while <span class="arithmatex">\(y^{(i)}\)</span> is the target</li>
+<li>For a logistic regression model<br />
+<span class="arithmatex">\(z = \mathbf{w} \cdot \mathbf{x} + b\)</span><br />
+<span class="arithmatex">\(f_{\mathbf{w},b}(x) = g(z)\)</span><br />
+    where <span class="arithmatex">\(g(z)\)</span> is the sigmoid function:<br />
+<span class="arithmatex">\(g(z) = \frac{1}{1+e^{-z}}\)</span>   </li>
+</ul>
+<p><img alt="" src="../images/C1_W3_Logistic_gradient_descent.png" /></p>
 
               
             </article>
@@ -817,6 +1008,42 @@ Let's implement this in Python.</li>
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../bias-variance-tradeoff/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bias-Variance Tradeoff" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Bias-Variance Tradeoff
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../data-handling/Pandas%3Arename-columns/" class="md-footer__link md-footer__link--next" aria-label="Next: Rename columns in Pandas" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Rename columns in Pandas
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

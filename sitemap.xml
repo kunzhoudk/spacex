@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.kunzhouspace.com/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/publications/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/certificate/certificate/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/data-handling/Pandas-split-columns/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/data-handling/Pandas%3Arename-columns/</loc>
-         <lastmod>2022-08-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://www.kunzhouspace.com/home/machine-learning/Logistic_regression/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/bias-variance-tradeoff/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/feature-scaling/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/feature_engineering/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/gradient-descent/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/machine-learning/learning_rate/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.kunzhouspace.com/home/machine-learning/logistic_regression/</loc>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/statistics/outliers/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/streamlit/display_text/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/streamlit/text_input/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/streamlit/what_is_streamlit/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.kunzhouspace.com/home/streamlit/widgets/</loc>
-         <lastmod>2022-08-15</lastmod>
+         <lastmod>2022-08-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
